@@ -1,12 +1,10 @@
 <template name="task">
-  <li class="list-group-item {{#if checked}}checked{{/if}}">
-      <div class="row">
-        <div class="col-xs-11">
-            <span class="text lead">{{text}}</span>
-        </div>
-        <div class="col-xs-1">
-            <button class="btn btn-default btn-lg delete">&times;</button> 
-        </div>
+  <div class="col-sm-4 task-card"> 
+  <div class="card">
+    <div class="card-block">
+        <h3 class="text card-title">{{text}}</h3>
+        <button class="btn btn-default delete">Delete</button> 
     </div>
-  </li>
+  </div>
+    </div>
 </template>

@@ -1,26 +1,20 @@
 <body>
-  <nav class="navbar navbar-default">
-    <div class="navbar-header">
+  <nav class="navbar navbar-inverse bg-primary">
+    <div class="container">
       <a class="navbar-brand" href="#">Pass-By-Message</a>
-    </div>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <form class="navbar-form navbar-left new-task">
-          <div class="input-group">
-            <input type="text" name="text" class="form-control" placeholder="New task" />
-            <span class="input-group-btn">
-              <button class="btn btn-default" type="submit">Add</button>
-            </span>
+      </div>
+  </nav>
+  <div class="container content">
+      <div class="col-lg-12">
+      <form class="new-task">
+        <div class="form-group row">
+          <input type="text" name="text" class="form-control col-10" placeholder="New task" />
+          <button class="btn btn-primary col-2" type="submit">Add</button>
           </div>
         </form>
     </div>
-  </nav>
-  <div class="container-fluid">
     <div class="row">
-      <div class="col-lg-12">
-        <ul class="list-group">
-          {{#each tasks}} {{> task}} {{/each}}
-        </ul>
+      {{#each tasks}} {{> task}} {{/each}}
       </div>
     </div>
-  </div>
 </body>

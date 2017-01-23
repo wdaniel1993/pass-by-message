@@ -1,2 +1,2 @@
-import bootstrap from 'bootstrap-sass';
+import 'bootstrap';
 import '../imports/ui/body.js';
