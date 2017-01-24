@@ -1,0 +1,8 @@
+<template name="categories">
+    <select id="categoryselect" class="col-2">
+        <option disabled="disabled" selected="selected">Please Select</option> 
+        {{#each categories}}
+            <option value="{{this.key}}">{{this.name}}</option>
+        {{/each}}
+    </select>
+</template>
