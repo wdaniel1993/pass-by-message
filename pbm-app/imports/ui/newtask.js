@@ -15,14 +15,14 @@ Template.newtask.events({
     // Get value from form element
     const target = event.target;
     const text = target.text.value;
-    const category = target.categoryselect.value;
+    const category = parseInt(target.categoryselect.value);
     const duetime = new Date();
  
     // Insert a task into the collection
     Tasks.insert({
       text: text,
       createdAt: new Date(),
-      category: category,
+      category: isNaN(category) ? 0 : category,
       duetime: duetime
     });
  
