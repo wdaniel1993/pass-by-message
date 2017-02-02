@@ -6,6 +6,8 @@
   },
   "dependencies": {
     "babel-runtime": "^6.22.0",
-    "meteor-node-stubs": "~0.2.0"
+    "meteor-node-stubs": "~0.2.0",
+    "moment": "^2.17.1",
+    "pikaday-time": "^1.5.1"
   }
 }

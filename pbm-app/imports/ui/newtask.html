@@ -1,8 +1,9 @@
 <template name="newtask">
   <form class="new-task">
     <div class="form-group row">
-      <input type="text" name="text" class="form-control col-10" placeholder="New task" />
+      <input type="text" name="text" class="form-control col-12" placeholder="New task" />
       {{>categories}}
+      <input type="text" id="datepicker" class="col-8">
       <button class="btn btn-primary col-2" type="submit">Add</button>
       </div>
     </form>

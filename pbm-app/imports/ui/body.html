@@ -5,13 +5,16 @@
       </div>
   </nav>
   <div class="container content">
-    <div class="row">
-      <div class="col-lg-12">
-          {{ > newtask }}
+    {{#if isAdmin}}
+      <div class="row">
+        <div class="col-lg-12">
+            {{ > newtask }}
         </div>
       </div>
+    {{/if}}
     <div class="row">
       {{#each tasks}} {{> task}} {{/each}}
       </div>
     </div>
+    <audio id="audio" src="https://www.soundjay.com/phone/telephone-ring-02.wav" autostart="false" ></audio>
 </body>
